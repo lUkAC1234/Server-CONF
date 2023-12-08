@@ -118,13 +118,13 @@ py manage.py migrate
 py manage.py createsuperuser
 ```
 
-<h4>
+<pre>
   Username (leave blank to use 'root'): <br>
   Email address:<br> 
   Password: <br> 
   Password (again): <br>
   Superuser created successfully.
-</h4>
+</pre>
 
 #### Collect Static files
 
