@@ -119,11 +119,11 @@ py manage.py createsuperuser
 ```
 
 <pre>
-  Username (leave blank to use 'root'): <br>
-  Email address:<br> 
-  Password: <br> 
-  Password (again): <br>
-  Superuser created successfully.
+Username (leave blank to use 'root'): <br>
+Email address:<br> 
+Password: <br> 
+Password (again): <br>
+Superuser created successfully.
 </pre>
 
 #### Collect Static files
