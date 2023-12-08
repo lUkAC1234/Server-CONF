@@ -169,7 +169,7 @@ systemctl status gunicorn
 <pre>
  gunicorn.service - gunicorn daemon
  Loaded: loaded (/etc/systemd/system/gunicorn.service; enabled; vendor preset: enabled)
- Active: active (running) since Mon 2018-09-10 20:58:14 IST; 10s ago
+ Active: active (running) since Mon 2023-12-08 23:16:14 IST; 10s ago
  Main PID: 2377 (gunicorn)
    CGroup: /system.slice/gunicorn.service
            ├─2377 /root/testproject/.env/bin/python3 /root/project_name/.env/bin/gunicorn --access-logfile - --workers 3 --b
