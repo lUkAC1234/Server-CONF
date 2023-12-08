@@ -10,7 +10,7 @@ cd /var
 ```
 
 ```
-mkdir wwww
+mkdir www
 ```
 
 ```
