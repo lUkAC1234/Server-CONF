@@ -33,27 +33,27 @@ apt-get install python3-pip python3-dev libpq-dev postgresql postgresql-contrib 
 sudo -u postgres psql
 ```
 
-#### And Next, setting the default encoding to UTF-8, setting the default transaction isolation scheme to "read committed" and setting the timezone to UTC with the following command:
-```
-ALTER ROLE testuser SET client_encoding TO 'utf8';
-ALTER ROLE testuser SET default_transaction_isolation TO 'read committed';
-ALTER ROLE testuser SET timezone TO 'UTC';
-```
-
-#### Next, grant all the privileges to your database and exit from the PostgreSQL session with the following command: 
-
-```
-postgres=# GRANT ALL PRIVILEGES ON DATABASE project_name TO testuser;
-postgres=#  \q
-```
-
 #### Next, create a PostgreSQL database and user for your Django project using the following command:
 ```
 CREATE DATABASE project_name;
 ```
 #### Create user for postgres
 ```
-CREATE USER user WITH PASSWORD 'password'; 
+CREATE USER root WITH PASSWORD 'password'; 
+```
+
+#### And Next, setting the default encoding to UTF-8, setting the default transaction isolation scheme to "read committed" and setting the timezone to UTC with the following command:
+```
+ALTER ROLE root SET client_encoding TO 'utf8';
+ALTER ROLE root SET default_transaction_isolation TO 'read committed';
+ALTER ROLE root SET timezone TO 'UTC';
+```
+
+#### Next, grant all the privileges to your database and exit from the PostgreSQL session with the following command: 
+
+```
+postgres=# GRANT ALL PRIVILEGES ON DATABASE project_name TO root;
+postgres=#  \q
 ```
 
 ### And now we will clone our project to server
