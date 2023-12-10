@@ -154,6 +154,11 @@ ExecStart=/var/www/project_name/.env/bin/gunicorn --access-logfile - --workers 3
 WantedBy=multi-user.target
 </pre>
 
+#### Install gunicorn
+```
+pip install gunicorn
+```
+
 #### Start gunicorn and enable it
 ```
 systemctl start gunicorn
